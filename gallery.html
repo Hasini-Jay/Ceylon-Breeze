@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gallery — Ceylon Breeze Resorts">
+  <title>Gallery — Ceylon Breeze Resorts</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-name fw-bold" style="font-family: 'Playfair Display', serif; font-size: 1.3rem;">Ceylon Breeze</span>
+        <span class="brand-sub d-block" style="font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; opacity: 0.8;">Resorts</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="properties.html">Properties</a></li>
+          <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+          <li class="nav-item"><a class="nav-link" href="experiences.html">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn-accent px-3 py-2" href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero" style="background-image: url('images/hero-gallery.jpg');">
+    <div class="hero-content container">
+      <h1>A Visual Journey</h1>
+    </div>
+  </section>
+
+  <section class="py-4 bg-white border-bottom">
+    <div class="container">
+      <div class="btn-group flex-wrap justify-content-center" role="group" aria-label="Gallery filters">
+        <button type="button" class="btn btn-outline-success btn-sm gallery-filter-btn active" data-filter="All">All</button>
+        <button type="button" class="btn btn-outline-success btn-sm gallery-filter-btn" data-filter="Sigiriya" data-filter-type="location">Sigiriya</button>
+        <button type="button" class="btn btn-outline-success btn-sm gallery-filter-btn" data-filter="Mirissa" data-filter-type="location">Mirissa</button>
+        <button type="button" class="btn btn-outline-success btn-sm gallery-filter-btn" data-filter="Ella" data-filter-type="location">Ella</button>
+        <button type="button" class="btn btn-outline-success btn-sm gallery-filter-btn" data-filter="Rooms" data-filter-type="category">Rooms</button>
+        <button type="button" class="btn btn-outline-success btn-sm gallery-filter-btn" data-filter="Food" data-filter-type="category">Food</button>
+        <button type="button" class="btn btn-outline-success btn-sm gallery-filter-btn" data-filter="Nature" data-filter-type="category">Nature</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-4 bg-light">
+    <div class="container">
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2">
+        <div class="col gallery-item" data-location="Sigiriya" data-category="Rooms">
+          <img src="images/sigiriya-room-deluxe.jpg" alt="Deluxe room garden view Sigiriya" class="gallery-img rounded" data-location="Sigiriya" data-category="Rooms" data-caption="Deluxe room — garden light and linen calm." data-index="0">
+        </div>
+        <div class="col gallery-item" data-location="Sigiriya" data-category="Nature">
+          <img src="images/sigiriya-landscape.jpg" alt="Jungle and rock vista Sigiriya" class="gallery-img rounded" data-location="Sigiriya" data-category="Nature" data-caption="Morning mist rising toward the ancient rock." data-index="1">
+        </div>
+        <div class="col gallery-item" data-location="Sigiriya" data-category="Food">
+          <img src="images/food-1.jpg" alt="Sri Lankan curry spread" class="gallery-img rounded" data-location="Sigiriya" data-category="Food" data-caption="Clay-pot curries and coconut sambol." data-index="2">
+        </div>
+        <div class="col gallery-item" data-location="Mirissa" data-category="Rooms">
+          <img src="images/mirissa-room-ocean.jpg" alt="Ocean view room Mirissa" class="gallery-img rounded" data-location="Mirissa" data-category="Rooms" data-caption="Ocean room — salt breeze through louvres." data-index="3">
+        </div>
+        <div class="col gallery-item" data-location="Mirissa" data-category="Nature">
+          <img src="images/mirissa-sunset.jpg" alt="Mirissa sunset over water" class="gallery-img rounded" data-location="Mirissa" data-category="Nature" data-caption="Sunset gilding the south-coast horizon." data-index="4">
+        </div>
+        <div class="col gallery-item" data-location="Mirissa" data-category="Food">
+          <img src="images/food-2.jpg" alt="Grilled seafood platter" class="gallery-img rounded" data-location="Mirissa" data-category="Food" data-caption="Catch of the day from nearby harbours." data-index="5">
+        </div>
+        <div class="col gallery-item" data-location="Ella" data-category="Rooms">
+          <img src="images/ella-room-valley.jpg" alt="Valley view room Ella" class="gallery-img rounded" data-location="Ella" data-category="Rooms" data-caption="Valley view room — mist at the window." data-index="6">
+        </div>
+        <div class="col gallery-item" data-location="Ella" data-category="Nature">
+          <img src="images/ella-gap.jpg" alt="Ella Gap panorama" class="gallery-img rounded" data-location="Ella" data-category="Nature" data-caption="Ella Gap — clouds threading the ridges." data-index="7">
+        </div>
+        <div class="col gallery-item" data-location="Ella" data-category="Food">
+          <img src="images/food-3.jpg" alt="High tea with views" class="gallery-img rounded" data-location="Ella" data-category="Food" data-caption="Highland tea and finger sandwiches." data-index="8">
+        </div>
+        <div class="col gallery-item" data-location="Sigiriya" data-category="Nature">
+          <img src="images/sigiriya-safari.jpg" alt="Elephants on safari" class="gallery-img rounded" data-location="Sigiriya" data-category="Nature" data-caption="Grassland elephants at golden hour." data-index="9">
+        </div>
+        <div class="col gallery-item" data-location="Mirissa" data-category="Nature">
+          <img src="images/mirissa-whale.jpg" alt="Whale tail Mirissa" class="gallery-img rounded" data-location="Mirissa" data-category="Nature" data-caption="Blue whale — respectful distance, lasting awe." data-index="10">
+        </div>
+        <div class="col gallery-item" data-location="Ella" data-category="Nature">
+          <img src="images/ella-tea.jpg" alt="Tea pickers on hillside" class="gallery-img rounded" data-location="Ella" data-category="Nature" data-caption="Tea terraces stepping toward the sky." data-index="11">
+        </div>
+        <div class="col gallery-item" data-location="Sigiriya" data-category="Rooms">
+          <img src="images/sigiriya-villa.jpg" alt="Eco villa plunge pool" class="gallery-img rounded" data-location="Sigiriya" data-category="Rooms" data-caption="Eco villa — private plunge and jungle hush." data-index="12">
+        </div>
+        <div class="col gallery-item" data-location="Mirissa" data-category="Rooms">
+          <img src="images/mirissa-villa.jpg" alt="Honeymoon villa pool" class="gallery-img rounded" data-location="Mirissa" data-category="Rooms" data-caption="Honeymoon villa — pool meets the tide line." data-index="13">
+        </div>
+        <div class="col gallery-item" data-location="Ella" data-category="Rooms">
+          <img src="images/ella-villa.jpg" alt="Ridge villa garden" class="gallery-img rounded" data-location="Ella" data-category="Rooms" data-caption="Ridge villa — garden paths and gap views." data-index="14">
+        </div>
+        <div class="col gallery-item" data-location="Sigiriya" data-category="Food">
+          <img src="images/sigiriya-pool.jpg" alt="Poolside dining Sigiriya" class="gallery-img rounded" data-location="Sigiriya" data-category="Food" data-caption="Lunch by the pool — tropical fruits and grills." data-index="15">
+        </div>
+        <div class="col gallery-item" data-location="Mirissa" data-category="Food">
+          <img src="images/gallery-extra-2.jpg" alt="Beachside cocktail" class="gallery-img rounded" data-location="Mirissa" data-category="Food" data-caption="Citrus spritzes as waves fold in." data-index="16">
+        </div>
+        <div class="col gallery-item" data-location="Ella" data-category="Nature">
+          <img src="images/ella-hike.jpg" alt="Hiking trail Ella" class="gallery-img rounded" data-location="Ella" data-category="Nature" data-caption="Forest trails — ferns and birdcall." data-index="17">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="lightbox" class="lightbox-overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Image preview">
+    <button type="button" id="lightbox-close" class="lightbox-close" aria-label="Close">&times;</button>
+    <button type="button" id="lightbox-prev" class="lightbox-nav lightbox-prev" aria-label="Previous">&#8249;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+    <button type="button" id="lightbox-next" class="lightbox-nav lightbox-next" aria-label="Next">&#8250;</button>
+  </div>
+
+  <footer class="site-footer pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-3">
+          <h5 class="footer-brand">Ceylon Breeze</h5>
+          <p class="footer-tagline">Resorts</p>
+          <p class="footer-desc">Where the Island Breathes. Three iconic eco-luxury retreats across Sri Lanka's most breathtaking landscapes.</p>
+        </div>
+        <div class="col-md-3">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="footer-links list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="footer-heading">Our Retreats</h6>
+          <ul class="footer-links list-unstyled">
+            <li><a href="rooms.html#sigiriya">Ceylon Breeze Sigiriya</a></li>
+            <li><a href="rooms.html#mirissa">Ceylon Breeze Mirissa</a></li>
+            <li><a href="rooms.html#ella">Ceylon Breeze Ella</a></li>
+          </ul>
+          <h6 class="footer-heading mt-4">Contact</h6>
+          <p class="footer-contact">+94 11 234 5678<br>info@ceylonbreezeresorts.lk</p>
+        </div>
+        <div class="col-md-3">
+          <h6 class="footer-heading">Follow Us</h6>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-hr mt-4">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <p class="footer-copy mb-0">
+            &copy; 2025 Ceylon Breeze Resorts. All rights reserved.<br>
+            <small>This website was developed for academic purposes at
+              <a href="https://www.nsbm.ac.lk" target="_blank" rel="noopener noreferrer">NSBM Green University Town</a>.
+            </small>
+          </p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <small class="text-muted">Web Designing Module Project</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
